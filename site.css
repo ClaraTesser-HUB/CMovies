@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: black;
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: rgb(26, 6, 53);
     overflow-x: hidden;
 }
 
@@ -16,12 +16,12 @@ body{
 }
 
 .navbar .navbar-brand{
-    color: #e50914;
+    color: #6f3496;
     font-weight: bold;
 }
 
 .navbar .nav-item .nav-link{
-    color: #e50914;
+    color: #6f3496;
 }
 .scrolled{
     background-color: black;
@@ -43,11 +43,45 @@ body{
 }
 
 .carousel-caption h3{
-    color: #e50914;
+    color: #6f3496;
     font-weight: bolder;
     font-size: 32px;
 }
 
+@media only screen and (max-width: 500px){
+    .carousel-caption h3{
+        font-size: 20px;
+    }
+}
+
 .carousel-caption p{
     color: white;
+}
+
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+}
+
+.rowposter a{
+    cursor: inherit;
+}
+
+.rowimg{
+    margin-right: 10px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.rowimg:hover{
+    transform: scale(1.12);
+}
+
+.rowposter::-webkit-scrollbar{
+    display: none;
 }
