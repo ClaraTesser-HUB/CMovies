@@ -4,7 +4,7 @@ window.addEventListener('scroll', function(){
     if (this.window.scrollY > 50)
         navbar.classList.add('scrolled')
     else
-    navbar.classList.removed('scrolled')
+    navbar.classList.remove('scrolled')
 })
 //Opções de acesso da API
 const options = {

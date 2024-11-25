@@ -85,3 +85,7 @@ body{
 .rowposter::-webkit-scrollbar{
     display: none;
 }
+#detalhes h1{
+    color: #be85e4;
+}
+.
