@@ -23,11 +23,11 @@ async function getMovie() {
         //Detalhes do Filme
         let detalhes = document.getElementById('detalhes');
         detalhes.innerHTML = `<h1>${movie.title ?? movie.name}</h1>
-        <h5 class='mb-4'><b>Título Original:</b> ${movie.original_title ?? movie.original_name}</h5>
-        <p class='mb-3'><b>Data de Estreia:</b> ${movie.release_date}</p>
-        <p class='mb-3'><b>País de Origem:</b> ${movie.origin_country}</p>
-        <p class='mb-3'><b>Popularidade:</b> ${movie.popularity.toFixed(1)}</p>
-        <p class='mb-5'><b>Status:</b> ${movie.status}</p>
+        <h5 class='mb-4'>Título Original: ${movie.original_title ?? movie.original_name}</h5>
+        <p class='mb-3'>Data de Estreia: ${movie.release_date}</p>
+        <p class='mb-3'>País de Origem: ${movie.origin_country}</p>
+        <p class='mb-3'>Popularidade: ${movie.popularity.toFixed(1)}</p>
+        <p class='mb-5'>Status: ${movie.status}</p>
         <p>${movie.overview}</p>`;
 
     //botão
@@ -59,7 +59,7 @@ async function getMovie() {
         let elencoContainer = document.querySelector('#elenco');
         elencoContainer.innerHTML ='';
         for (let i = 0; i < elenco.length; i++) {
-            let foto = elenco[i].profile_path?`https://image.tmdb.org/t/p/original/${elenco[i].profile_path}`:'img/ghost.png';
+            let foto = elenco[i].profile_path?`https://image.tmdb.org/t/p/original/${elenco[i].profile_path}`:'img/logo CMovies.png';
             elencoContainer.innerHTML +=
             `<div class='col-lg-4 col-sm-6'>
                 <div class='row'>

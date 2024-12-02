@@ -1,45 +1,135 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CMovies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/claquete-removebg-preview.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="site.css">
-  </head>
-  <body>
-    <!-- Começo da NavBar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">CMovies
-            <img src="img/favicon-32x32.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold;">HOME</a> 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pesquisar.html">Pesquisar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="autor.html">Autor</a>
-              </li>
-            </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMovies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+  <!-- Começo da NavBar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CMovies
+        <img src="img/logo CMovies.png" width="35px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link "  href="index.html" style="font-weight: bold;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pesquisar.html">Pesquisar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="autor.html">Autor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Termino da NavBar -->
+  <div class="container mt-5 py-5">
+    <div class="row mt-4">
+      <div class="col-lg-4 p-6">
+        <img src="img/Clara.foto-removebg-preview.png" alt="" class="img-fluid w-100" width="220px">
+      </div>
+      <div class="col-lg-8 fs-2">
+
+        <div class="mb-2">
+          <h1 class="mt-3" style="color: #975dc7;" style="font-weight: bolder;">Oi! Meu nome é Clara</h1>
+          <h5 class="mt-4" style="color: white;">Projeto desenvolvido nas aulas de HTML/CSS/JS</h5>
+          <h6 class="mt-4" style="color: white;">Tem como objetivo apresentar séries e filmes que estão em alta. Mostrando também seu elenco, trailer e outras informções como lançamento, popularidade entre outros.</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Ghostbusters -->
+    <div class="container mt-5 py-5">
+      <h1 style="color:  rgb(151, 93, 199);"> <img src="img/logo CMovies.png" style="margin-bottom: 15px;" width="50px">
+        Filmes Favoritos </h1>
+      <div class="d-flex flex-row justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+          <img src="img/movie ghostbuster poster.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">GHOSTBUSTERS</h3>
+            <p class="card-text">Os parapsicologistas Egon Spengler, Raymond Stantz e Peter Venkman, decidem abrir seu próprio negócio de caçadores de fantasmas quando um portal para uma outra dimensão é aberto em Nova York.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">IMDB: 7,8/10</li>
+            <li class="list-group-item">Saturn Award</li>
+            
+          </ul>
+          <div class="card-body">
+            <a target="_blank" style="color: #8145a8;" href="https://youtu.be/TaV1r341wYk?si=iHiLM1O7j5mO9WLT"
+              class="card-link">Música</a>
+            
           </div>
         </div>
-      </nav>
-    <!-- Termino da NavBar -->
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/site.js"></script>
-    
-  </body>
+
+        <!-- 13 going to 30 -->
+        <div class="card" style="width: 18rem;">
+          <img src="img/movie poster 13-30.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">DE REPENTE 30</h3>
+            <p class="card-text">Uma menina pediu um desejo em seu décimo terceiro aniversário e acorda no dia seguinte como uma mulher de trinta anos de idade.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">AdoroCinema : 4,2/5</li>
+            <li class="list-group-item">Lançado: 23/04/07</li>
+          </ul>
+          <div class="card-body">
+            <a target="_blank" style="color: #8145a8;" href="https://youtu.be/3jL4S4X97sQ?si=pMVqL0c39-6PCh5Z"
+              class="card-link">Música</a>
+            
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/Ghost_poster-51535.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">GHOST: DO OUTRO LADO  DA VIDA</h3>
+            <p class="card-text">Sam Wheat é um jovem executivo apaixonado por sua namorada, Molly. Ele acaba morto em um assalto, mas seu espírito não vai para o outro plano e descobre que Molly também corre perigo. Para salvá-la, Sam pede ajuda a uma médium que consegue ouvi-lo.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">AdoroCinema : 4,5/5</li>
+            <li class="list-group-item">Lançado: 01/11/90</li>
+          </ul>
+          <div class="card-body">
+            <a target="_blank" style="color: #8145a8;" href="https://www.youtube.com/watch?v=G_nceUq4E-o"
+              class="card-link">Música</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <h1 style="color: #8145a8;">Ajudantes</h1>
+    <div class="box mt-4 ">
+      <img src="img/gallo.png" style="border-radius: 200px; width: 150px;">
+      <span style="color: #8145a8;"> Gallo</span>
+  </div>
+  <div class="box ">
+      <img src="img/lucas foto.jpeg" style="border-radius: 200px; width: 150px;">
+      <span style="color: #8145a8;"> Lucas</span>
+  </div>
+  
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
+
+</body>
+
 </html>
