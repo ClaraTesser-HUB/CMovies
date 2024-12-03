@@ -6,6 +6,7 @@ const media =params.get('media');
 //Ao carregar executa as funções de buscar os dados
 document.addEventListener('DOMContentLoaded', async () => {
     await getMovie();
+    toggleLoading();
 });
 
 async function getMovie() {
@@ -24,7 +25,7 @@ async function getMovie() {
         let detalhes = document.getElementById('detalhes');
         detalhes.innerHTML = `<h1>${movie.title ?? movie.name}</h1>
         <h5 class='mb-4'>Título Original: ${movie.original_title ?? movie.original_name}</h5>
-        <p class='mb-3'>Data de Estreia: ${movie.release_date}</p>
+        <p class='mb-3'>Data de Estreia: ${formatarData(movie.release_date)}</p>
         <p class='mb-3'>País de Origem: ${movie.origin_country}</p>
         <p class='mb-3'>Popularidade: ${movie.popularity.toFixed(1)}</p>
         <p class='mb-5'>Status: ${movie.status}</p>
@@ -59,7 +60,7 @@ async function getMovie() {
         let elencoContainer = document.querySelector('#elenco');
         elencoContainer.innerHTML ='';
         for (let i = 0; i < elenco.length; i++) {
-            let foto = elenco[i].profile_path?`https://image.tmdb.org/t/p/original/${elenco[i].profile_path}`:'img/logo CMovies.png';
+            let foto = elenco[i].profile_path?`https://image.tmdb.org/t/p/original/${elenco[i].profile_path}`:'img/cmovie block.png';
             elencoContainer.innerHTML +=
             `<div class='col-lg-4 col-sm-6'>
                 <div class='row'>
