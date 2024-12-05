@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.whoIsWatching{
+    width: 100vw;
+    min-height: 100vh;
+    background-color:#6f3496 ;
+}
+
+.logo-section{
+    width: 95vw;
+    margin: auto;
+    height: 5rem;
+    background-color: rgb(111, 52, 150);
+    /* background-color: #8145a8; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-section a img{
+    width: 5rem;
+    height: 1.0;
+    cursor: pointer;
+
+}
+
+.main-div{
+    width: 100vw;
+    height: 80vh;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.main-div h1{
+    font-size: 6.8rem;
+    letter-spacing: 0.2rem;
+    font-size: 600;
+}

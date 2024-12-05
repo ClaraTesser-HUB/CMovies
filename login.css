@@ -6,7 +6,8 @@
 }
 
 body {
-    background: #000;
+    background: #6f3496;
+    font-family: 'Rowdies', sans-serif;;
 }
 body::before {
     content: "";
@@ -35,11 +36,12 @@ nav a img {
     padding: 70px;
     width: 450px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .75);
+    background: rgba(69, 11, 102, 0.75);
 }
 .form-wrapper h2 {
     color: #fff;
     font-size: 2rem;
+    
 }
 .form-wrapper form {
     margin: 25px 0 65px;
@@ -52,7 +54,7 @@ form .form-control {
 .form-control input {
     height: 100%;
     width: 100%;
-    background: #333;
+    background: #400e5e;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -61,7 +63,7 @@ form .form-control {
     padding: 0 20px;
 }
 .form-control input:is(:focus, :valid) {
-    background: #444;
+    background: #3f0950;
     padding: 16px 20px 0;
 }
 .form-control label {
@@ -82,7 +84,7 @@ form button {
     width: 100%;
     padding: 16px 0;
     font-size: 1rem;
-    background: #e50914;
+    background: #8145a8;
     color: #fff;
     font-weight: 500;
     border-radius: 4px;
@@ -93,7 +95,7 @@ form button {
     transition: 0.1s ease;
 }
 form button:hover {
-    background: #c40812;
+    background: #8145a8;
 }
 .form-wrapper a {
     text-decoration: none;
